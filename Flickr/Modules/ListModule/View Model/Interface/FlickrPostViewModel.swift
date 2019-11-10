@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol TestModuleCellViewModel {
+protocol FlickrPostViewModel {
     var id: String { get }
     var url: URL { get }
     var title: String { get }

@@ -11,10 +11,10 @@ import Kingfisher
 
 class TestModuleCell: UITableViewCell {
     private var token: ObservableToken = 0
-    private var viewModel: TestModuleCellViewModel?
+    private var viewModel: FlickrPostViewModel?
     private var isFav = false
     
-    func config(viewModel: TestModuleCellViewModel, reloadCallback: @escaping () -> Void) {
+    func config(viewModel: FlickrPostViewModel, reloadCallback: @escaping () -> Void) {
         label.text = viewModel.title
         self.viewModel = viewModel
         token = viewModel.isFav.observe { [weak self] value in

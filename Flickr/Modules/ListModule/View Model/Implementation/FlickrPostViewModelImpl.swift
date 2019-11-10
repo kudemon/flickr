@@ -8,7 +8,7 @@
 
 import Foundation
 
-class TestModuleCellViewModelImpl: TestModuleCellViewModel {
+class FlickrPostViewModelImpl: FlickrPostViewModel {
     let id: String
     let url: URL
     let title: String

@@ -6,18 +6,20 @@
 //  Copyright © 2019 Nikita Semenov. All rights reserved.
 //
 
-import UIKit
+import EasyDi
 
-class DetailsAssembly: ModuleAssembly {
-    let id: String
+class DetailsAssembly: Assembly {
+    private lazy var servicesAssembly: ServicesAssembly = context.assembly()
     
-    init(id: String) {
-        self.id = id
+    func viewModel(photoId: String) -> DetailsViewModel {
+        return define(init: DetailsViewModelImpl(state: self.servicesAssembly.appState,
+                                                 photoId: photoId))
     }
     
-    var rootViewController: UIViewController {
-        let viewController: DetailsViewController = resolve()
-        viewController.id = self.id
-        return viewController
+    func viewController(viewModel: DetailsViewModel) -> DetailsViewController {
+        return define(init: DetailsViewController()) {
+            $0.viewModel = viewModel
+            return $0
+        }
     }
 }

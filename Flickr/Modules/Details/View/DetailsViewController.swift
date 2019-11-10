@@ -11,7 +11,6 @@ import Kingfisher
 
 class DetailsViewController: UIViewController {
     var viewModel: DetailsViewModel?
-    var router: RouterProtocol?
     var id: String?
     var likeButton: UIButton?
     

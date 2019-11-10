@@ -13,10 +13,11 @@
 		0B361F95232EB8D100E9C3F0 /* DetailsAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B361F94232EB8D100E9C3F0 /* DetailsAssembly.swift */; };
 		0B361F97232EB98900E9C3F0 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B361F96232EB98900E9C3F0 /* DetailsViewModel.swift */; };
 		0B361F99232EBA0F00E9C3F0 /* DetailsViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B361F98232EBA0F00E9C3F0 /* DetailsViewModelImpl.swift */; };
+		11C9FF962378251000FF0A6E /* ServicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C9FF952378251000FF0A6E /* ServicesAssembly.swift */; };
 		11EDD7F9232E4B5B004AB8AF /* TestModuleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDD7F8232E4B5B004AB8AF /* TestModuleCell.swift */; };
 		11EDD7FC232E6459004AB8AF /* PostEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDD7FB232E6459004AB8AF /* PostEntity.swift */; };
-		11EDD7FF232E64FA004AB8AF /* TestModuleCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDD7FE232E64FA004AB8AF /* TestModuleCellViewModel.swift */; };
-		11EDD801232E6590004AB8AF /* TestModuleCellViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDD800232E6590004AB8AF /* TestModuleCellViewModelImpl.swift */; };
+		11EDD7FF232E64FA004AB8AF /* FlickrPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDD7FE232E64FA004AB8AF /* FlickrPostViewModel.swift */; };
+		11EDD801232E6590004AB8AF /* FlickrPostViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDD800232E6590004AB8AF /* FlickrPostViewModelImpl.swift */; };
 		11EDD806232E6F7D004AB8AF /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDD805232E6F7D004AB8AF /* AppState.swift */; };
 		11EDD808232E706B004AB8AF /* DictionaryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11EDD807232E706B004AB8AF /* DictionaryState.swift */; };
 		16E8F8101AA43C705D836419 /* Pods_FlickrTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE7BA2602776AC0D9CAC5ED5 /* Pods_FlickrTests.framework */; };
@@ -27,13 +28,13 @@
 		21A9BEB923251F9B00FF20EF /* FlickrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9BEB823251F9B00FF20EF /* FlickrTests.swift */; };
 		21A9BEC52325247100FF20EF /* DIFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9BEC42325247100FF20EF /* DIFramework.swift */; };
 		21A9BEC823252B3E00FF20EF /* DependencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9BEC723252B3E00FF20EF /* DependencyService.swift */; };
-		21A9BECD23252B8500FF20EF /* TestModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9BECC23252B8500FF20EF /* TestModuleViewController.swift */; };
-		21A9BED323252BD500FF20EF /* TestModuleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9BED223252BD500FF20EF /* TestModuleViewModel.swift */; };
+		21A9BECD23252B8500FF20EF /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9BECC23252B8500FF20EF /* ListViewController.swift */; };
+		21A9BED323252BD500FF20EF /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9BED223252BD500FF20EF /* ListViewModel.swift */; };
 		21A9BED523252C0900FF20EF /* ГолосуйИлиПроиграешьViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9BED423252C0900FF20EF /* ГолосуйИлиПроиграешьViewModel.swift */; };
 		21A9BED823252FC800FF20EF /* TestAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9BED723252FC800FF20EF /* TestAssembly.swift */; };
 		21A9BEDB2325300B00FF20EF /* ModuleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9BEDA2325300B00FF20EF /* ModuleAssembly.swift */; };
-		21A9BEDF23253E2800FF20EF /* TestModuleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9BEDE23253E2800FF20EF /* TestModuleModel.swift */; };
-		21A9BEE123253E3B00FF20EF /* FlickrModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9BEE023253E3B00FF20EF /* FlickrModel.swift */; };
+		21A9BEDF23253E2800FF20EF /* FlickrModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9BEDE23253E2800FF20EF /* FlickrModel.swift */; };
+		21A9BEE123253E3B00FF20EF /* FlickrModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9BEE023253E3B00FF20EF /* FlickrModelImpl.swift */; };
 		21A9BEE423253E6700FF20EF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9BEE323253E6700FF20EF /* Post.swift */; };
 		21A9BEEA23253F5700FF20EF /* InternetClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9BEE923253F5700FF20EF /* InternetClient.swift */; };
 		21A9BEEC23253FB100FF20EF /* FlickrInternetClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A9BEEB23253FB100FF20EF /* FlickrInternetClient.swift */; };
@@ -63,10 +64,11 @@
 		0B361F94232EB8D100E9C3F0 /* DetailsAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAssembly.swift; sourceTree = "<group>"; };
 		0B361F96232EB98900E9C3F0 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 		0B361F98232EBA0F00E9C3F0 /* DetailsViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModelImpl.swift; sourceTree = "<group>"; };
+		11C9FF952378251000FF0A6E /* ServicesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesAssembly.swift; sourceTree = "<group>"; };
 		11EDD7F8232E4B5B004AB8AF /* TestModuleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestModuleCell.swift; sourceTree = "<group>"; };
 		11EDD7FB232E6459004AB8AF /* PostEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEntity.swift; sourceTree = "<group>"; };
-		11EDD7FE232E64FA004AB8AF /* TestModuleCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModuleCellViewModel.swift; sourceTree = "<group>"; };
-		11EDD800232E6590004AB8AF /* TestModuleCellViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModuleCellViewModelImpl.swift; sourceTree = "<group>"; };
+		11EDD7FE232E64FA004AB8AF /* FlickrPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPostViewModel.swift; sourceTree = "<group>"; };
+		11EDD800232E6590004AB8AF /* FlickrPostViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrPostViewModelImpl.swift; sourceTree = "<group>"; };
 		11EDD805232E6F7D004AB8AF /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		11EDD807232E706B004AB8AF /* DictionaryState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryState.swift; sourceTree = "<group>"; };
 		21A9BE9D23251F9A00FF20EF /* Flickr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flickr.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,13 +82,13 @@
 		21A9BEBA23251F9B00FF20EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21A9BEC42325247100FF20EF /* DIFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIFramework.swift; sourceTree = "<group>"; };
 		21A9BEC723252B3E00FF20EF /* DependencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyService.swift; sourceTree = "<group>"; };
-		21A9BECC23252B8500FF20EF /* TestModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModuleViewController.swift; sourceTree = "<group>"; };
-		21A9BED223252BD500FF20EF /* TestModuleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModuleViewModel.swift; sourceTree = "<group>"; };
+		21A9BECC23252B8500FF20EF /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		21A9BED223252BD500FF20EF /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		21A9BED423252C0900FF20EF /* ГолосуйИлиПроиграешьViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ГолосуйИлиПроиграешьViewModel.swift"; sourceTree = "<group>"; };
 		21A9BED723252FC800FF20EF /* TestAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAssembly.swift; sourceTree = "<group>"; };
 		21A9BEDA2325300B00FF20EF /* ModuleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleAssembly.swift; sourceTree = "<group>"; };
-		21A9BEDE23253E2800FF20EF /* TestModuleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModuleModel.swift; sourceTree = "<group>"; };
-		21A9BEE023253E3B00FF20EF /* FlickrModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrModel.swift; sourceTree = "<group>"; };
+		21A9BEDE23253E2800FF20EF /* FlickrModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrModel.swift; sourceTree = "<group>"; };
+		21A9BEE023253E3B00FF20EF /* FlickrModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrModelImpl.swift; sourceTree = "<group>"; };
 		21A9BEE323253E6700FF20EF /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		21A9BEE923253F5700FF20EF /* InternetClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetClient.swift; sourceTree = "<group>"; };
 		21A9BEEB23253FB100FF20EF /* FlickrInternetClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrInternetClient.swift; sourceTree = "<group>"; };
@@ -153,16 +155,8 @@
 				0B361F91232EB6C900E9C3F0 /* View Model */,
 				0B361F90232EB6C500E9C3F0 /* View */,
 				0B361F8F232EB6BF00E9C3F0 /* Assembly */,
-				0B361F8E232EB6B800E9C3F0 /* Model */,
 			);
 			path = Details;
-			sourceTree = "<group>";
-		};
-		0B361F8E232EB6B800E9C3F0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		0B361F8F232EB6BF00E9C3F0 /* Assembly */ = {
@@ -188,6 +182,14 @@
 				0B361F98232EBA0F00E9C3F0 /* DetailsViewModelImpl.swift */,
 			);
 			path = "View Model";
+			sourceTree = "<group>";
+		};
+		11C9FF94237824FF00FF0A6E /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				11C9FF952378251000FF0A6E /* ServicesAssembly.swift */,
+			);
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		11EDD7FA232E6445004AB8AF /* Entity */ = {
@@ -291,12 +293,12 @@
 				5FF1F8E4234A235F005E506B /* Grid module */,
 				0B361F8D232EB6A200E9C3F0 /* Details */,
 				21A9BED923252FFD00FF20EF /* Common */,
-				21A9BECA23252B7200FF20EF /* TestModule */,
+				21A9BECA23252B7200FF20EF /* ListModule */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		21A9BECA23252B7200FF20EF /* TestModule */ = {
+		21A9BECA23252B7200FF20EF /* ListModule */ = {
 			isa = PBXGroup;
 			children = (
 				21A9BECF23252B9900FF20EF /* Model */,
@@ -305,13 +307,13 @@
 				21A9BECB23252B7900FF20EF /* View */,
 				21A9BECE23252B8800FF20EF /* View Model */,
 			);
-			path = TestModule;
+			path = ListModule;
 			sourceTree = "<group>";
 		};
 		21A9BECB23252B7900FF20EF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				21A9BECC23252B8500FF20EF /* TestModuleViewController.swift */,
+				21A9BECC23252B8500FF20EF /* ListViewController.swift */,
 				11EDD7F8232E4B5B004AB8AF /* TestModuleCell.swift */,
 			);
 			path = View;
@@ -339,8 +341,8 @@
 		21A9BED023252BBC00FF20EF /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				21A9BED223252BD500FF20EF /* TestModuleViewModel.swift */,
-				11EDD7FE232E64FA004AB8AF /* TestModuleCellViewModel.swift */,
+				21A9BED223252BD500FF20EF /* ListViewModel.swift */,
+				11EDD7FE232E64FA004AB8AF /* FlickrPostViewModel.swift */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -349,7 +351,7 @@
 			isa = PBXGroup;
 			children = (
 				21A9BED423252C0900FF20EF /* ГолосуйИлиПроиграешьViewModel.swift */,
-				11EDD800232E6590004AB8AF /* TestModuleCellViewModelImpl.swift */,
+				11EDD800232E6590004AB8AF /* FlickrPostViewModelImpl.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -374,7 +376,7 @@
 		21A9BEDC23253DDB00FF20EF /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				21A9BEDE23253E2800FF20EF /* TestModuleModel.swift */,
+				21A9BEDE23253E2800FF20EF /* FlickrModel.swift */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -382,7 +384,7 @@
 		21A9BEDD23253DE400FF20EF /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
-				21A9BEE023253E3B00FF20EF /* FlickrModel.swift */,
+				21A9BEE023253E3B00FF20EF /* FlickrModelImpl.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -398,6 +400,7 @@
 		21A9BEE523253F3200FF20EF /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				11C9FF94237824FF00FF0A6E /* Assembly */,
 				0B361F86232EA91100E9C3F0 /* Router */,
 				11EDD802232E6F56004AB8AF /* App State */,
 				21A9BEE623253F3A00FF20EF /* Internet Service */,
@@ -656,25 +659,26 @@
 				21A9BEA923251F9A00FF20EF /* Flickr.xcdatamodeld in Sources */,
 				21A9BEA123251F9A00FF20EF /* AppDelegate.swift in Sources */,
 				11EDD806232E6F7D004AB8AF /* AppState.swift in Sources */,
-				21A9BED323252BD500FF20EF /* TestModuleViewModel.swift in Sources */,
-				11EDD7FF232E64FA004AB8AF /* TestModuleCellViewModel.swift in Sources */,
+				21A9BED323252BD500FF20EF /* ListViewModel.swift in Sources */,
+				11EDD7FF232E64FA004AB8AF /* FlickrPostViewModel.swift in Sources */,
 				21A9BEE423253E6700FF20EF /* Post.swift in Sources */,
 				21A9BEC52325247100FF20EF /* DIFramework.swift in Sources */,
 				5FF1F8E3234A231E005E506B /* AppAssembly.swift in Sources */,
 				11EDD7F9232E4B5B004AB8AF /* TestModuleCell.swift in Sources */,
-				21A9BECD23252B8500FF20EF /* TestModuleViewController.swift in Sources */,
+				21A9BECD23252B8500FF20EF /* ListViewController.swift in Sources */,
 				0B361F99232EBA0F00E9C3F0 /* DetailsViewModelImpl.swift in Sources */,
-				21A9BEDF23253E2800FF20EF /* TestModuleModel.swift in Sources */,
+				21A9BEDF23253E2800FF20EF /* FlickrModel.swift in Sources */,
 				0B361F97232EB98900E9C3F0 /* DetailsViewModel.swift in Sources */,
 				21A9BEDB2325300B00FF20EF /* ModuleAssembly.swift in Sources */,
 				21A9BED823252FC800FF20EF /* TestAssembly.swift in Sources */,
 				0B361F95232EB8D100E9C3F0 /* DetailsAssembly.swift in Sources */,
 				21A9BEEA23253F5700FF20EF /* InternetClient.swift in Sources */,
-				21A9BEE123253E3B00FF20EF /* FlickrModel.swift in Sources */,
+				21A9BEE123253E3B00FF20EF /* FlickrModelImpl.swift in Sources */,
 				21A9BEC823252B3E00FF20EF /* DependencyService.swift in Sources */,
+				11C9FF962378251000FF0A6E /* ServicesAssembly.swift in Sources */,
 				0B361F8A232EA95900E9C3F0 /* RouterProtocol.swift in Sources */,
 				11EDD808232E706B004AB8AF /* DictionaryState.swift in Sources */,
-				11EDD801232E6590004AB8AF /* TestModuleCellViewModelImpl.swift in Sources */,
+				11EDD801232E6590004AB8AF /* FlickrPostViewModelImpl.swift in Sources */,
 				5F82980C235185B5007BE420 /* GridCell.swift in Sources */,
 				5FF1F8E8234A238D005E506B /* GridViewController.swift in Sources */,
 				21A9BEEC23253FB100FF20EF /* FlickrInternetClient.swift in Sources */,
