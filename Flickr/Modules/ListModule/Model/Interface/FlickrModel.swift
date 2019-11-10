@@ -8,14 +8,14 @@
 
 import Foundation
 
-enum TestModuleModelState {
+enum FlickrModelState {
     case loaded([Photo])
     case error(Error)
     case changed(Photo, Bool)
 }
 
-protocol TestModuleModel {
-    var state: Observable<TestModuleModelState> { get }
+protocol FlickrModel {
+    var state: Observable<FlickrModelState> { get }
     func loadFlickr()
     func like(id: String, liked: Bool)
 }

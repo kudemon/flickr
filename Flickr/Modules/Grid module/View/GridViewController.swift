@@ -9,10 +9,10 @@
 import UIKit
 
 class GridViewController: UIViewController {
-    var viewModel: TestModuleViewModel?
+    var viewModel: ListViewModel?
     var router: RouterProtocol?
     private var collectionView: UICollectionView!
-    private var viewModels: [TestModuleCellViewModel] = []
+    private var viewModels: [FlickrPostViewModel] = []
     
     init() {
         super.init(nibName: nil, bundle: nil)

@@ -9,59 +9,20 @@
 import UIKit
 import EasyDi
 
-class ServicesAssembly: Assembly {
-    var internetClient: InternetClient {
-        return define(scope: .lazySingleton,init: FlickrInternetClient())
-    }
-    
-    var appState: AppState {
-        return define(init: DictionaryState())
-    }
-    
-    var router: RouterProtocol {
-        return define(init: Router())
-    }
-}
 
 class ModelsAssembly: Assembly {
-    private lazy var servicesAssembly: ServicesAssembly = context.assembly()
-    
-    var testModuleModel: TestModuleModel {
-        return define(init: FlickrModel()) {
-            $0.internetClient = self.servicesAssembly.internetClient
-            $0.appState = self.servicesAssembly.appState
-            return $0
-        }
-    }
 }
 
 class ViewModelsAssembly: Assembly {
     private lazy var modelsAssembly: ModelsAssembly = context.assembly()
     
-    var testModuleViewModel: TestModuleViewModel {
-        return define(init: ГолосуйИлиПроиграешьViewModel(model: self.modelsAssembly.testModuleModel))
-    }
 }
 
 class ViewAssembly: Assembly {
     private lazy var vmsAssembly: ViewModelsAssembly = context.assembly()
     private lazy var serviceAssembly: ServicesAssembly = context.assembly()
     
-    var testModuleVC: TestModuleViewController {
-        return define(init: TestModuleViewController()) {
-            $0.viewModel = self.vmsAssembly.testModuleViewModel
-            $0.router = self.serviceAssembly.router
-            return $0
-        }
-    }
     
-    var gridModuleVC: GridViewController {
-       return define(init: GridViewController()) {
-            $0.viewModel = self.vmsAssembly.testModuleViewModel
-            $0.router = self.serviceAssembly.router
-            return $0
-        }
-    }
 }
 
 

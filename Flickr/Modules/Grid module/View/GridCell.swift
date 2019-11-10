@@ -11,10 +11,10 @@ import Kingfisher
 
 class GridCell: UICollectionViewCell {
     private var token: ObservableToken = 0
-    private var viewModel: TestModuleCellViewModel?
+    private var viewModel: FlickrPostViewModel?
     private var isFav = false
 
-    func config(viewModel: TestModuleCellViewModel, reloadCallback: @escaping () -> Void) {
+    func config(viewModel: FlickrPostViewModel, reloadCallback: @escaping () -> Void) {
         self.viewModel = viewModel
         token = viewModel.isFav.observe { [weak self] value in
             guard let self = self, let value = value else { return }

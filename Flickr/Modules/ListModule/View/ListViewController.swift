@@ -8,12 +8,12 @@
 
 import UIKit
 
-class TestModuleViewController: UIViewController {
-    var viewModel: TestModuleViewModel?
+class ListViewController: UIViewController {
+    var viewModel: ListViewModel?
     var router: RouterProtocol?
     
     private let tableView = UITableView()
-    private var viewModels: [TestModuleCellViewModel] = []
+    private var viewModels: [FlickrPostViewModel] = []
     
     init() {
         super.init(nibName: nil, bundle: nil)
@@ -66,7 +66,7 @@ class TestModuleViewController: UIViewController {
 }
 
 
-extension TestModuleViewController: UITableViewDataSource {
+extension ListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModels.count
     }
@@ -80,7 +80,7 @@ extension TestModuleViewController: UITableViewDataSource {
 }
 
 
-extension TestModuleViewController: UITableViewDelegate {
+extension ListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let photo = viewModels[indexPath.row]
         // TODO: пробросить в роутер айдишник этой фотки. Роутер = зависимость контролера такая же, как и вью модель. gotoPhotosDetails( id: String )

@@ -8,13 +8,13 @@
 
 import Foundation
 
-class ГолосуйИлиПроиграешьViewModel: TestModuleViewModel {
-    let state = Observable<TestModuleViewModelState>()
+class ListViewModelImpl: ListViewModel {
+    let state = Observable<ListViewModelState>()
     
-    private let model: TestModuleModel
-    private var viewModels = [TestModuleCellViewModelImpl]()
+    private let model: FlickrModel
+    private var viewModels = [FlickrPostViewModelImpl]()
     
-    init(model: TestModuleModel) {
+    init(model: FlickrModel) {
         self.model = model
         
         model.state.onChanged = { [weak self] value in
@@ -22,8 +22,8 @@ class ГолосуйИлиПроиграешьViewModel: TestModuleViewModel {
             
             switch value {
             case .loaded(let photos):
-                self.viewModels = photos.compactMap { (photo: Photo) -> TestModuleCellViewModelImpl? in
-                    let viewModel = TestModuleCellViewModelImpl(photo: photo)
+                self.viewModels = photos.compactMap { (photo: Photo) -> FlickrPostViewModelImpl? in
+                    let viewModel = FlickrPostViewModelImpl(photo: photo)
                     viewModel?.isFav.observe { [weak viewModel, weak self] newValue in
                         guard let self = self, let viewModel = viewModel, let newValue = newValue else { return }
                         

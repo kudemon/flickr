@@ -9,9 +9,15 @@
 import UIKit
 
 class Router: RouterProtocol {
+    private lazy var detailsAssembly = DetailsAssembly.instance()
+    
     func goToDetails(id: String, controller: UIViewController) {
-        let newViewController = DetailsAssembly(id: id).rootViewController
-        newViewController.hidesBottomBarWhenPushed = true
-        controller.navigationController?.pushViewController(newViewController, animated: true)
+        
+        
+        let vm = detailsAssembly.viewModel(photoId: id)
+        let vc = detailsAssembly.viewController(viewModel: vm)
+        
+        vc.hidesBottomBarWhenPushed = true
+        controller.navigationController?.pushViewController(vc, animated: true)
     }
 }

@@ -8,19 +8,19 @@
 
 import Foundation
 
-class FlickrModel {
+class FlickrModelImpl {
     var internetClient: InternetClient?
     var appState: AppState?
-    private var callback: TestModuleViewModel?
-    private var internalState = Observable<TestModuleModelState>()
+    private var callback: ListViewModel?
+    private var internalState = Observable<FlickrModelState>()
 }
 
-extension FlickrModel: TestModuleModel {
+extension FlickrModelImpl: FlickrModel {
     func like(id: String, liked: Bool) {
         appState!.updatePhoto(id: id, isFav: liked)
     }
     
-    var state: Observable<TestModuleModelState> {
+    var state: Observable<FlickrModelState> {
         return internalState
     }
     
@@ -47,7 +47,7 @@ extension FlickrModel: TestModuleModel {
     }
 }
 
-extension FlickrModel: AppStateCallbacks {
+extension FlickrModelImpl: AppStateCallbacks {
     func photoDidChange(_ photo: Photo, isFav: Bool) {
         print("\(#function) \(isFav)")
         self.internalState.value = .changed(photo, isFav)

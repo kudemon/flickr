@@ -8,13 +8,13 @@
 
 import Foundation
 
-enum TestModuleViewModelState {
-    case loaded([TestModuleCellViewModel])
+enum ListViewModelState {
+    case loaded([FlickrPostViewModel])
     case error(Error)
 }
 
 
-protocol TestModuleViewModel {
-    var state: Observable<TestModuleViewModelState> { get }
+protocol ListViewModel {
+    var state: Observable<ListViewModelState> { get }
     func flickr()
 }
